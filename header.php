@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Tema Personal PHP</title>
    <meta name="author" content="oramirezj">
-   <meta name="description" content="Practicas curso 'Became a WordPress Developer'">
+   <meta name="description" content="Practice to 'Became a WordPress Developer'">
    <link rel="stylesheet" href="style.css"> -->
    <?php wp_head(); ?>
 </head>
@@ -17,7 +17,7 @@
       <header class="site-header">
          <div class="container">
             <h1 class="school-logo-text float-left">
-               <a href="#"><strong>Fictional</strong> University</a>
+               <a href="<?php echo site_url() ?>"><strong>Fictional</strong> University</a>
             </h1>
             <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search"
                   aria-hidden="true"></i></span>
@@ -25,7 +25,7 @@
             <div class="site-header__menu group">
                <nav class="main-navigation">
                   <ul>
-                     <li><a href="#">About Us</a></li>
+                     <li><a href="<?php echo site_url('./?page_id=12') ?>">About Us</a></li>
                      <li><a href="#">Programs</a></li>
                      <li><a href="#">Events</a></li>
                      <li><a href="#">Campuses</a></li>
